@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="setting" android:title="Setting"></item>
-    <item android:id="my chart" android:title="My chart"></item>
-    <item android:id="logout" android:title="Logout"></item>
 
+    <item android:id="@+id/setting" android:title="Setting"></item>
+    <item android:id="@+id/mychart" android:title="My Chart"></item>
+    <item android:id="@+id/logout" android:title="Log Out"></item>
 
 </menu>
