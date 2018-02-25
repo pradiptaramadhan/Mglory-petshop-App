@@ -1,31 +1,43 @@
 package com.aji.userpc.mglory_petshop;
 
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
+import android.support.v7.widget.CardView;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
-    private DrawerLayout drawerLayout ;
-    private ActionBarDrawerToggle toggle;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+    private CardView StatusCard, AksesorisCard,FoodCard, CareCard, BuyCard;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        drawerLayout = (DrawerLayout) findViewById(R.id.main);
-        toggle =  new ActionBarDrawerToggle(this,drawerLayout,R.string.Open,R.string.Close);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        StatusCard = findViewById(R.id.status_card);
+        AksesorisCard = findViewById(R.id.aksesoris_card);
+        FoodCard = findViewById(R.id.food_card);
+        CareCard = findViewById(R.id.care_card);
+        BuyCard = findViewById(R.id.buy_card);
+
+        StatusCard.setOnClickListener(this);
+        AksesorisCard.setOnClickListener(this);
+        FoodCard.setOnClickListener(this);
+        CareCard.setOnClickListener(this);
+        BuyCard.setOnClickListener(this);
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if(toggle.onOptionsItemSelected(item)){
-            return true;
+    public void onClick(View view) {
+        Intent i ;
+
+        switch (view.getId()){
+            case R.id.status_card : i = new Intent(this,Status.class);startActivity(i); break;
+            case R.id.aksesoris_card : i = new Intent(this,Aksesoris.class);startActivity(i); break;
+            case R.id.food_card : i = new Intent(this,Food.class);startActivity(i); break;
+            case R.id.care_card : i = new Intent(this,Care.class);startActivity(i); break;
+            case R.id.buy_card : i = new Intent(this,Buy.class);startActivity(i); break;
         }
-        return super.onOptionsItemSelected(item);
+
     }
 }
