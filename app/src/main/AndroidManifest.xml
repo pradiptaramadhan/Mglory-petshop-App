@@ -17,11 +17,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SignUp" />
         <activity android:name=".Status" />
         <activity android:name=".Food" />
         <activity android:name=".Buy" />
         <activity android:name=".Care" />
-        <activity android:name=".Aksesoris"></activity>
+        <activity android:name=".Aksesoris" />
+        <activity android:name=".Login"></activity>
     </application>
 
 </manifest>
