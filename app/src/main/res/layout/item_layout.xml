@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
@@ -23,8 +24,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:padding="8dp"
+            android:layout_toEndOf="@+id/produkImage"
+            android:layout_toRightOf="@+id/produkImage"
+            android:padding="5dp"
             android:text="title produk" />
 
         <TextView
@@ -32,11 +34,38 @@
             style="@style/TextAppearance.AppCompat.Subhead"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/produkImage"
-            android:layout_alignLeft="@+id/title_produk"
-            android:layout_alignStart="@+id/title_produk"
-            android:padding="8dp"
-            android:text="harga produk" />
+            android:layout_below="@+id/title_produk"
+            android:layout_toEndOf="@+id/produkImage"
+            android:layout_toRightOf="@+id/produkImage"
+            android:padding="2dp"
+            android:text="harga produk"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/ratingBar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/ic_add_cart" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/customRatingBar"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/harga_produk"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/produkImage"
+            android:layout_toRightOf="@+id/produkImage"
+            android:isIndicator="5"
+            android:numStars="5"
+            android:padding="5dp"
+            android:rating="2"
+            android:stepSize="1" />
 
     </RelativeLayout>
 
