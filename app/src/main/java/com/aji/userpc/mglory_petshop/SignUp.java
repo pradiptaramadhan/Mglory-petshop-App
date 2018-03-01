@@ -75,7 +75,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                 progressBar.setVisibility(View.GONE);
                 if (task.isSuccessful()) {
                     finish();
-                    //startActivity(new Intent(SignUp.this, Login.class));
+                    startActivity(new Intent(SignUp.this, Login.class));
                     Toast.makeText(getApplicationContext(), "Berhasil SignUp", Toast.LENGTH_SHORT).show();
                 } else {
 
@@ -101,7 +101,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.buttonLogin:
                 finish();
-                //startActivity(new Intent(this, Login.class));
+                startActivity(new Intent(this, Login.class));
                 break;
         }
     }

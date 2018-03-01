@@ -52,8 +52,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
-            android:background="@color/colorPrimary"
-            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:textColor="@color/darkgray"
             android:text="Register"
             />
 
@@ -64,10 +64,10 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dip"
-            android:background="@color/colorPrimary"
+            android:background="@color/colorAccent"
             android:text="Login"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/darkgray"
             android:textSize="15dp" />
     </LinearLayout>
     <ProgressBar
