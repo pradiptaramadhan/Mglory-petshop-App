@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aji.userpc.mglory_petshop.AddProduk"
+    android:id="@+id/relativeLayout">
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:hint="nama produk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextHarga"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:hint="harga produk"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDeskripsi"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNama"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <Spinner
+        android:id="@+id/spinnerKategori"
+        android:layout_width="137dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="makanan"
+        android:entries="@array/kategori"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDeskripsi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toEndOf="@+id/editTextHarga"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNama"
+        app:layout_constraintVertical_bias="0.189"></Spinner>
+
+    <Button
+        android:id="@+id/buttonAddProduk"
+        android:layout_width="300dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="tambahkan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Tambah Produk Baru"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDeskripsi"
+        android:layout_width="262dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Deskripsi"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddProduk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
