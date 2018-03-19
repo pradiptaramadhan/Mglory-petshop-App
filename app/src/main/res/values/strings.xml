@@ -2,4 +2,10 @@
     <string name="app_name">MGlory-petshop</string>
     <string name="Open">Open</string>
     <string name="Close">Close</string>
+
+    <array name="kategori">
+        <item>Makanan</item>
+        <item>Aksesoris</item>
+        <item>Perawatan</item>
+    </array>
 </resources>

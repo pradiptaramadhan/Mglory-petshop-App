@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "313602857176-pcs0t1bigp77vsup4so44e72uupul5b3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aji.userpc.mglory_petshop",
+            "certificate_hash": "e017f5d2e8f8be0d6039f872856bca3535f2b3d9"
+          }
+        },
+        {
           "client_id": "313602857176-jtsqvh91okuoeok9lp0ab55q7b8e0p99.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
