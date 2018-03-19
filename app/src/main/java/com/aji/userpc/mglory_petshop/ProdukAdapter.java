@@ -1,0 +1,42 @@
+package com.aji.userpc.mglory_petshop;
+
+import android.app.Activity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
+
+import java.util.List;
+
+/**
+ * Created by user pc on 3/18/2018.
+ */
+
+public class ProdukAdapter extends ArrayAdapter<Produk> {
+
+    private Activity context;
+    List<Produk> produks;
+
+    public ProdukAdapter(Activity context, List<Produk> produks) {
+        super(context, R.layout.item_layout_admin, produks);
+        this.context = context;
+        this.produks = produks;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+
+        LayoutInflater inflater = context.getLayoutInflater();
+        View listViewItem = inflater.inflate(R.layout.item_layout_admin, null, true);
+
+        TextView textViewNama = (TextView) listViewItem.findViewById(R.id.nama_produk);
+        TextView textViewHarga = (TextView) listViewItem.findViewById(R.id.harga_produk);
+
+        Produk pd =  produks.get(position);
+        textViewNama.setText(pd.getNamaProduk());
+        textViewHarga.setText((pd.getHargaProduk()));
+
+        return listViewItem;
+    }
+}

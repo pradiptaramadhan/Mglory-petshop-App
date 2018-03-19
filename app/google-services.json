@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "313602857176",
+    "firebase_url": "https://mglory-petshop-app.firebaseio.com",
+    "project_id": "mglory-petshop-app",
+    "storage_bucket": "mglory-petshop-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313602857176:android:307e655ff9c39288",
+        "android_client_info": {
+          "package_name": "com.aji.userpc.mglory_petshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313602857176-pcs0t1bigp77vsup4so44e72uupul5b3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aji.userpc.mglory_petshop",
+            "certificate_hash": "e017f5d2e8f8be0d6039f872856bca3535f2b3d9"
+          }
+        },
+        {
+          "client_id": "313602857176-jtsqvh91okuoeok9lp0ab55q7b8e0p99.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aji.userpc.mglory_petshop",
+            "certificate_hash": "d18abd45ff0178793a24e8b576e01a427cf0483d"
+          }
+        },
+        {
+          "client_id": "313602857176-7bed2id3t98ovtb7i3ivee0iuos4daa3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxdFfABdGXYsLgEbGpCRydL-EnNsRgVug"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313602857176-7bed2id3t98ovtb7i3ivee0iuos4daa3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
