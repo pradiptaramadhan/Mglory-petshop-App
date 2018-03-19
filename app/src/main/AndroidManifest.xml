@@ -21,7 +21,8 @@
         <activity android:name=".Food" />
         <activity android:name=".Buy" />
         <activity android:name=".Care" />
-        <activity android:name=".Aksesoris"></activity>
+        <activity android:name=".Aksesoris" />
+        <activity android:name=".ShoppingCart"></activity>
     </application>
 
 </manifest>
