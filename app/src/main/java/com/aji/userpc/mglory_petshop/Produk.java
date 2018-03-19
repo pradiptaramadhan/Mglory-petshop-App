@@ -11,6 +11,10 @@ public class Produk {
     private String deskripsiProduk;
     private String kategoriProduk;
 
+    public Produk(){
+
+    }
+
     public Produk(String id, String namaProduk, String hargaProduk, String deskripsiProduk, String kategoriProduk) {
         this.id = id;
         this.namaProduk = namaProduk;
@@ -18,6 +22,15 @@ public class Produk {
         this.deskripsiProduk = deskripsiProduk;
         this.kategoriProduk = kategoriProduk;
     }
+
+    public Produk(String id, String namaProduk, String hargaProduk, String kategoriProduk) {
+        this.id = id;
+        this.namaProduk = namaProduk;
+        this.hargaProduk = hargaProduk;
+        this.kategoriProduk = kategoriProduk;
+    }
+
+
 
     public String getId() {
         return id;
