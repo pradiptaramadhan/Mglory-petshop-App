@@ -17,6 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC6js7VmtuOUwLpCYudvELIAtoP9Vf3iOs"/>
         <activity android:name=".Status" />
         <activity android:name=".Food" />
         <activity android:name=".Buy" />
