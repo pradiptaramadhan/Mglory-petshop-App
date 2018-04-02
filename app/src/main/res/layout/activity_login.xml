@@ -17,10 +17,10 @@
 
 
         <ImageView
+            android:id="@+id/logo"
             android:layout_width="185dp"
             android:layout_height="151dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="30dp"
             android:src="@drawable/logo" />
 
 
@@ -38,7 +38,7 @@
             android:id="@+id/password"
             android:layout_width="322dp"
             android:layout_height="43dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="30dp"
             android:hint="Password"
             android:inputType="textPassword"
             android:textColor="@android:color/white"
@@ -48,11 +48,18 @@
         <Button
             android:id="@+id/btn_login"
             android:layout_width="348dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
+            android:layout_height="30dp"
             android:background="@color/colorAccent"
             android:text="@string/btn_login"
+            android:layout_marginBottom="10dp"
             android:textColor="@android:color/black" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/lgnFb"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:onClick="loginFB"/>
 
         <Button
             android:id="@+id/btn_reset_password"
