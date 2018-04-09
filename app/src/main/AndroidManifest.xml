@@ -21,7 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CrudProduk" />
-        <activity android:name=".ListProduk"></activity>
+        <activity android:name=".ListProduk" />
+        <activity android:name=".Login"></activity>
     </application>
 
 </manifest>
