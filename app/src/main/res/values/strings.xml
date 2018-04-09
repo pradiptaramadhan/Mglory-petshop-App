@@ -39,4 +39,9 @@
     <string name="facebook_app_id">377715352702387</string>
     <string name="fb_login_protocol_scheme">fb377715352702387</string>
 
+    <string name="subtotal" />
+    <string name="order_summary" />
+    <string name="card_fee" />
+    <string name="total" />
+    <string name="pay_now" />
 </resources>

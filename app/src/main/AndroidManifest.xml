@@ -2,11 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aji.userpc.mglory_petshop">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -46,6 +41,17 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC6js7VmtuOUwLpCYudvELIAtoP9Vf3iOs"/>
+        <activity android:name=".Status" />
+        <activity android:name=".Food" />
+        <activity android:name=".Buy" />
+        <activity android:name=".Care" />
+        <activity android:name=".Aksesoris" />
+        <activity android:name=".ShoppingCart" />
+        <activity android:name=".lokasi" />
+        <activity android:name=".CheckoutOrder"></activity>
     </application>
 
 </manifest>
