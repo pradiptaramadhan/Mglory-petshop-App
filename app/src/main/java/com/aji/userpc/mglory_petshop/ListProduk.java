@@ -34,8 +34,6 @@ public class ListProduk extends AppCompatActivity {
 
         listViewProduk = (ListView) findViewById(R.id.listViewProduks2);
 
-        recyclerView.setHasFixedSize(true);
-
         String kategori = getIntent().getStringExtra("kategori");
         databaseProduk = FirebaseDatabase.getInstance().getReference("Produk").child(kategori);
 

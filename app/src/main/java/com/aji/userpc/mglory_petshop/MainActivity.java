@@ -15,7 +15,8 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
     private CardView StatusCard, AksesorisCard,FoodCard, CareCard, BuyCard;
 
     NavigationView navigationView;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView fotouser;
 
     String nama, email;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                         // Add code here to update the UI based on the item selected
                         // For example, swap UI fragments here
-
+                        Intent intent;
                         int id = menuItem.getItemId();
                         switch (id){
                             case R.id.setting :
@@ -74,12 +76,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                         Toast.LENGTH_LONG).show();
                                 FirebaseAuth.getInstance().signOut();
                                 finish();
-                                Intent intent = new Intent(MainActivity.this, Login.class);
+                                intent = new Intent(MainActivity.this, Login.class);
                                 startActivity(intent);
                                 break;
                             case R.id.mychart:
-                                Toast.makeText(MainActivity.this ,"cart!",
-                                        Toast.LENGTH_LONG).show();
+                                intent = new Intent(MainActivity.this, ShoppingCart.class);
+                                startActivity(intent);
 
                                 break;
                         }

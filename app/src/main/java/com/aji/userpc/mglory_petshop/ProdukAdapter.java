@@ -18,6 +18,7 @@ import java.util.List;
 
 public class ProdukAdapter extends ArrayAdapter<Produk> {
 
+
     private Activity context;
     List<Produk> produks;
 
@@ -48,4 +49,5 @@ public class ProdukAdapter extends ArrayAdapter<Produk> {
         return listViewItem;
     }
 }
+
 

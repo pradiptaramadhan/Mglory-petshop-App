@@ -121,11 +121,13 @@ public class CrudProduk extends AppCompatActivity {
 
     }
 
-//    @Override
+
+
+    //    @Override
 //    protected void onStart() {
 //        super.onStart();
     private void getData() {
-        databaseProduk.addValueEventListener(new ValueEventListener() {
+        databaseProduk.child(spinKategori.getSelectedItem().toString()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -205,7 +207,8 @@ public class CrudProduk extends AppCompatActivity {
 
     private boolean updateProduk(String id, String nama, String harga, String kategori) {
 
-        DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Produk").child(id);
+        DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Produk")
+                .child(spinKategori.getSelectedItem().toString()).child(id);
 
 
         Produk produk = new Produk(id, nama, harga, kategori);
@@ -216,7 +219,8 @@ public class CrudProduk extends AppCompatActivity {
 
     private boolean deleteProduk(String id) {
 
-        DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Produk").child(id);
+        DatabaseReference dR = FirebaseDatabase.getInstance().getReference("Produk")
+                .child(spinKategori.getSelectedItem().toString()).child(id);
         dR.removeValue();
         Toast.makeText(getApplicationContext(), "Produk Deleted", Toast.LENGTH_LONG).show();
         return true;
@@ -264,6 +268,7 @@ public class CrudProduk extends AppCompatActivity {
 
             }
         });
+
     }
 
     private void chooseImage() {
